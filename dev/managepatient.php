@@ -17,11 +17,10 @@
   }
   else
 	//echo "Notice: no input";
-
-	 
 	//add new functions to simplify this
   	//enable recursive search for each field to make things easier during search
 ?>
+
 <body class="theme-blue"> 
 <section class="content">
 	<div class="container-fluid">  
@@ -100,6 +99,7 @@
 												<td><a href="patientprofile.php?id=<?php echo $patientlist[$i]['pid']?>">[View Profile]</a></td>
 											</tr>
 										<?php
+										// add options to show other details too
 											}
 										?>
 									
