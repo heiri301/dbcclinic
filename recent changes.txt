@@ -1,3 +1,7 @@
+May Update A - Changes
 - Added Templates
 - changed CSS for form layout
 - updated Bootstrap Version (v4.0.0)
+- Removed bloat code
+- Remvoed unused imports / plugins
+- Included Ajax files for future integration.
