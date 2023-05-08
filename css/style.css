@@ -1,5 +1,5 @@
 ﻿/* Navbar ====================================== */
-@import url(materialize.css);
+@import url();
 .navbar {
   font-family: arial, sans-serif;
   -webkit-border-radius: 0;
@@ -5090,7 +5090,7 @@ section.content {
 
 .form-group {
   width: 100%;
-  margin-bottom: 25px; }
+  margin-bottom: 18px; }
   .form-group .form-control {
     width: 100%;
     border: none;
@@ -5111,14 +5111,14 @@ section.content {
     margin-top: 5px;
     font-weight: normal;
     color: #F44336; }
+  
   .form-group .form-line {
     width: 100%;
     position: relative;
-	border: 2px solid #ddd;
-	border-radius: 5px;
-	padding-left: 5px;
-	
-	margin-bottom: 20px;
+	  border: 2px solid #ddd;
+	  border-radius: 5px;
+	  padding-left: 5px;
+	  margin-bottom: 18px;
 	}
     /*.form-group .form-line:after {
       content: '';
@@ -5140,7 +5140,7 @@ section.content {
 	 */
     .form-group .form-line .form-label {
       font-weight: normal;
-	  padding-left: 5px;
+	    padding-left: 5px;
       color: #aaa;
       position: absolute;
       top: 8px;
@@ -5151,10 +5151,10 @@ section.content {
       -webkit-transition: 0.2s;
       transition: 0.2s; }
   .form-group .form-line.error {
-	border: 2px solid #F44336; 
+	  border: 2px solid #F44336; 
 	}
   .form-group .form-line.error .form-label {
-	color: #F44336; 
+	  color: #F44336; 
 	}
   .form-group .form-line.success {
     border: 2px solid #4CAF50; 
@@ -5163,7 +5163,7 @@ section.content {
     color: #4CAF50; 
 	}
   .form-group .form-line.warning { border: 2px solid #FFC107; }
-   .form-group .form-line.warning { color: #FFC107;  }
+  .form-group .form-line.warning .form-label { color: #FFC107;  }
   .form-group .form-line.focused {
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);

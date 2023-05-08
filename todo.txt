@@ -1,3 +1,9 @@
 set up personal health profile
 Background of the Office(Clinic) and their responsibilities
 IMPORTING OF PERSONAL HEALTH PROFILE
+
+As of March - April 2023
+- Templates for page
+- Ajax integration
+- Phpmailer integration
+- Contact developer integration (tech support)

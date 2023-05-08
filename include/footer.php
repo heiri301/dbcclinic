@@ -46,14 +46,26 @@
 							<a href="healthdeclaration.php"><span>Health Declaration</span></a>
 						</li>
 					</ul>
-			<a href="javascript:void(0);">
-				<i class="material-icons">account_circle</i>
-				<span>USER MANAGEMENT</span>
-			</a>
-			<a href="javascript:void(0);">
-				<i class="material-icons">help</i>
-				<span>HELP</span>
-			</a>
+				<a href="javascript:void(0);">
+					<i class="material-icons">account_circle</i>
+					<span>USER MANAGEMENT</span>
+				</a>
+				<a href="javascript:void(0);">
+					<i class="material-icons">help</i>
+					<span>HELP</span>
+				</a>
+				<a ref="javascript:void(0);" class="menu-toggle">
+					<i class="material-icons">settings</i>
+					<span>PROJECT TEMPLATES</span>
+				</a>
+					<ul class="ml-menu">
+						<li>
+							<a href="formtemplate_advanced.php"><span>Form Template - Advanced</span></a>
+						</li>
+						<li>
+							<a href="formtemplate_basic.php"><span>Form Template - Basic</span></a>
+						</li>
+					</ul>
 		</ul>
 	</div>
 	<!-- #Menu -->
@@ -74,8 +86,8 @@
 <!-- Bootstrap Core Js -->
 <script src="../plugins/bootstrap/js/bootstrap.js"></script>
 
-<!-- Select Plugin Js -->
-<script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script>
+<!-- Select Plugin Js (TEMPORARILY DISABLED) -->
+<!-- <script src="../plugins/bootstrap-select/js/bootstrap-select.js"></script> --> 
 
 <!-- Slimscroll Plugin Js -->
 <!-- <script src="../plugins/jquery-slimscroll/jquery.slimscroll.js"></script> -->
@@ -104,8 +116,7 @@
 <script src="../plugins/jquery-sparkline/jquery.sparkline.js"></script>
 
 <!-- Custom Js -->
-<script src="../js/admin.js"></script> <!-- just temporary. WILL BE EDITED SOON -->
+<script src="../js/admin.js"></script> 
 <script src="../js/pages/index.js"></script>
 
 <!-- Demo Js -->
-<!--  <script src="js/demo.js"></script> -->

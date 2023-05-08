@@ -48,7 +48,7 @@
             <i class="material-icons">close</i>
         </div>
     </div>
-    <!-- #END# Search Bar -->
+<!-- #END# Search Bar -->
 <!-- ====NAVBAR / TOPBAR==== -->
 <nav class="navbar">
 	<div class="container-fluid">
@@ -111,29 +111,6 @@
 			<div role="tabpanel" class="tab-pane fade in active in active" id="skins">
 			</div>
 			<div role="tabpanel" class="tab-pane fade" id="settings">
-				<div class="demo-settings">
-					<p>GENERAL SETTINGS</p>
-					<ul class="setting-list">
-						<li>
-							<span>Toggle Dark Mode</span>
-							<div class="switch">
-								<label><input type="checkbox" checked><span class="lever"></span></label>
-							</div>
-						</li>
-					</ul>
-					<p>MISCELLANEOUS SETTINGS</p>
-					<ul class="setting-list">
-						<li>
-							<span>Contact Administrator</span>
-							<div class="switch">
-								<label><input type="checkbox" checked><span class="lever"></span></label>
-							</div>
-						</li>
-					</ul>
-					<p>ACCOUNT SETTINGS</p>
-					<ul class="setting-list">
-					</ul>
-				</div>
 			</div>
 		</div>
 	</aside>

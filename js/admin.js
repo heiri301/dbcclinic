@@ -264,7 +264,7 @@ $.AdminBSB.navbar = {
 //==========================================================================================================================
 
 /* Input - Function ========================================================================================================
-*  You can manage the inputs(also textareas) with name of class 'form-control'
+*  You can manage the inputs (also textareas) with name of class 'form-control'
 *  
 */
 $.AdminBSB.input = {
