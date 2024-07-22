@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@vanillaes/csv": "^3.0.1",
+    "animate.css": "^4.1.1",
+    "bootstrap-icons": "^1.11.3",
+    "chart.js-plugin-labels-dv": "^5.0.1-beta",
+    "chartjs": "^0.3.24",
+    "csv-parse": "^5.5.6",
+    "flot": "^4.2.6",
+    "html5-qrcode": "^2.3.8",
+    "jquery": "^3.7.1",
+    "js-cookie": "^3.0.5",
+    "material-symbols": "^0.21.2",
+    "mime-types": "^2.1.35",
+    "requirejs": "^2.3.6",
+    "tinymce": "^7.2.1",
+    "validatorjs": "^3.22.1"
+  }
+}

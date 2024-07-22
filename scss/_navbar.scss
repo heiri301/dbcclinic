@@ -33,6 +33,28 @@
     }
 
     .navbar-collapse {
+        span {
+            color: #555;
+        }
+        .dropdown-menu {
+            position: absolute;
+            top: 95px;
+            right: 21px;
+            @include box-shadow(none);
+            color: #fff;
+            border-radius: 8px !important;
+            .user-display {
+                pointer-events: none;
+                cursor: default;
+                margin-top: -5px;
+                margin-bottom: -5px;
+            }
+            li {
+                #navbarCurrUsername {
+                    font-weight: bold;
+                }
+            }
+        }
         &.in {
             overflow: visible;
         }

@@ -1,0 +1,136 @@
+//Form fetching and parsing to PHP  
+//Initalize functions:  
+loginPageHandler()
+
+// Main function for passing and obtaining values from PHP
+
+function getLoginData(){
+    const loginFormSubmit = document.querySelector("#sign_in")
+    loginFormSubmit.addEventListener("submit", (evt) => {
+        evt.preventDefault();
+        const loginFormData = new FormData(document.querySelector("#sign_in"))  
+        const objloginFormData = Object.fromEntries(loginFormData);
+            var url = "../query/login.qry.php";
+            reqUserLoginData(url,objloginFormData);
+    });
+}
+
+
+async function reqUserLoginData(url,data) {
+    fetch(url, {
+        method: "POST", 
+        headers: {"Content-Type": "application/json",},
+        body: JSON.stringify(data),
+    })
+    .then(res => res.json(console.log(res)))
+    .then(data => { 
+        console.log(data);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+}
+
+function encryptData() {
+
+}
+
+
+
+
+
+
+// Set timeout when user hits 3 failed attempts while logging in.
+function showLoginAlert () {
+    //console.log(localStorage.loginstatus);
+    //var loginSuccessVal = localStorage.loginstatus;
+    //var loginTimeoutStatus = localStorage.timerOngoingStatus;
+    //let loginalertDiv = document.getElementById("loginformAlert");    
+
+    if(loginSuccessVal == 0 && (loginTimeoutStatus == 0 || loginTimeoutStatus == null)){                    
+        loginalertDiv.removeAttribute("hidden");
+        if(loginalertDiv.classList.contains('alert-success')) {
+            loginalertDiv.classList.remove("alert-success");
+            loginalertDiv.classList.add("alert-danger");
+        }
+        loginalertDiv.innerHTML  = "<strong>Login Unsuccessful.</strong><br>Please enter correct login information.";
+    }
+
+    if(loginSuccessVal == 0 && loginTimeoutStatus == 1){                    
+        loginalertDiv.removeAttribute("hidden");
+        if(loginalertDiv.classList.contains('alert-success')) {
+            loginalertDiv.classList.remove("alert-success");
+            loginalertDiv.classList.add("alert-danger");
+        }
+        loginalertDiv.innerHTML  = "<strong>Too many login attempts.</strong><br>Please try again after a while";
+    }
+
+    if(loginSuccessVal == 1){
+        loginalertDiv.removeAttribute("hidden");
+        if(loginalertDiv.classList.contains('alert-danger')) {
+            loginalertDiv.classList.remove("alert-danger");
+            loginalertDiv.classList.add("alert-success");
+        }
+        loginalertDiv.innerHTML = "<strong>Login Success</strong><br>You will be redirected to the main page...";
+    }
+}
+
+// Sets Login Trycount values
+function setLoginTryCountValue() {
+    if (localStorage.loginTryCount == null || localStorage.loginTryCount == undefined) {
+        localStorage.loginTryCount = '0';
+    }
+    if (localStorage.loginTryCount == 0 || localStorage.loginTryCount >= 1) {
+        var intTime = parseInt(localStorage.loginTryCount) + 1;
+       // console.log(intTime);
+        localStorage.loginTryCount = intTime;
+       // console.log(localStorage.loginTryCount);
+    }
+
+    return localStorage.loginTryCount;
+}
+
+function setLoginTimerValue() {
+    if (localStorage.LoginTimerValue == null || localStorage.LoginTimerValue == undefined) {
+        localStorage.LoginTimerValue = '0';
+    }
+    if (localStorage.LoginTimerValue == 0 || localStorage.LoginTimerValue >= 1) {
+        var intTime = parseInt(localStorage.LoginTimerValue) + 1; 
+        //console.log(intTime);
+        localStorage.LoginTimerValue = intTime;
+        //console.log('LoginTimerValue: ' + localStorage.LoginTimerValue);
+    }
+
+    return localStorage.LoginTimerValue;
+}
+
+function setLoginTimeout() {
+    var loginTryCount = localStorage.loginTryCount;
+    if (loginTryCount >= 5) {
+        // Timer value should only be updated if timer is inactive to prevent it from being triggered by the previous condition.
+        if (localStorage.timerOngoingStatus == 0 || localStorage.timerOngoingStatus == null){ 
+            setLoginTimerValue()
+        }
+            var timeoutVal = parseInt(localStorage.LoginTimerValue);
+            var timeoutVal = timeoutVal * 5; // multiples of 5
+            var timeoutVal = timeoutVal * 1000; // seconds to milliseconds
+
+            localStorage.timerOngoingStatus = 1;         
+            // Clear logintryout variable after timeout has finished
+        setTimeout(() => {
+            clearLoginTimeout()
+        }, timeoutVal);
+    } 
+}
+
+// Function for clearing login timeout variables 
+function clearLoginTimeout () {
+    //alert('Delay Test! ('+parseInt(localStorage.LoginTimerValue)*5+' seconds)');
+    localStorage.loginTryCount = 0;
+    localStorage.timerOngoingStatus = 0;
+}
+
+// Creates user session
+function createUserSession () {
+
+}

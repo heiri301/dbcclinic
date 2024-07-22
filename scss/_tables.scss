@@ -1,13 +1,5 @@
 ﻿.table {
     tbody {
-        tr {
-            td, th {
-                padding: 10px;
-                border-top: 1px solid #eee;
-                border-bottom: 1px solid #eee;
-            }
-        }
-
         tr.primary {
             td, th {
                 background-color: #1f91f3;
@@ -43,35 +35,9 @@
             }
         }
     }
-
-    thead {
-        tr {
-            th {
-                padding: 10px;
-                border-bottom: 1px solid #eee;
-            }
-        }
-    }
 }
-
+/*
 .table-bordered {
     border-top: 1px solid #eee;
-
-    tbody {
-        tr {
-            td, th {
-                padding: 10px;
-                border: 1px solid #eee;
-            }
-        }
-    }
-
-    thead {
-        tr {
-            th {
-                padding: 10px;
-                border: 1px solid #eee;
-            }
-        }
-    }
 }
+*/

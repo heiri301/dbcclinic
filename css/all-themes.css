@@ -1,0 +1,100 @@
+.theme-blue .sidebar .sidebar-brand {
+  background-color: #2196F3;
+}
+.theme-blue .sidebar .sidebar-brand span {
+  color: #fff;
+}
+.theme-blue .navbar-brand {
+  color: #fff;
+}
+.theme-blue .navbar-brand:hover {
+  color: #fff;
+}
+.theme-blue .navbar-brand:active {
+  color: #fff;
+}
+.theme-blue .navbar-brand:focus {
+  color: #fff;
+}
+.theme-blue .nav > li {
+  color: #555;
+}
+.theme-blue .nav > li > a:focus {
+  color: #555;
+}
+.theme-blue .nav > li > a:active, .theme-blue .nav > li > a:hover {
+  color: #2196F3;
+}
+.theme-blue .nav > li > a.nav-link[aria-current=page] {
+  text-decoration-color: #2196F3;
+}
+.theme-blue .sidebar .menu .list li.active {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue .sidebar .menu .list li.active > :first-child i, .theme-blue .sidebar .menu .list li.active > :first-child span {
+  color: #2196F3;
+}
+.theme-blue .sidebar .menu .list .toggled {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue .sidebar .menu .list .ml-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue .sidebar .legal .copyright a {
+  color: #2196F3 !important;
+}
+
+.theme-blue-grey .navbar {
+  background-color: #607D8B;
+}
+.theme-blue-grey .navbar-brand {
+  color: #fff;
+}
+.theme-blue-grey .navbar-brand:hover {
+  color: #fff;
+}
+.theme-blue-grey .navbar-brand:active {
+  color: #fff;
+}
+.theme-blue-grey .navbar-brand:focus {
+  color: #fff;
+}
+.theme-blue-grey .nav > li > a {
+  color: #fff;
+}
+.theme-blue-grey .nav > li > a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue-grey .nav > li > a:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue-grey .nav .open > a {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue-grey .nav .open > a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue-grey .nav .open > a:focus {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue-grey .bars {
+  color: #fff;
+}
+.theme-blue-grey .sidebar .menu .list li.active {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue-grey .sidebar .menu .list li.active > :first-child i, .theme-blue-grey .sidebar .menu .list li.active > :first-child span {
+  color: #607D8B;
+}
+.theme-blue-grey .sidebar .menu .list .toggled {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue-grey .sidebar .menu .list .ml-menu {
+  background-color: rgba(0, 0, 0, 0);
+}
+.theme-blue-grey .sidebar .legal {
+  background-color: #fff;
+}
+.theme-blue-grey .sidebar .legal .copyright a {
+  color: #607D8B !important;
+}/*# sourceMappingURL=all-themes.css.map */

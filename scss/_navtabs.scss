@@ -1,4 +1,20 @@
-﻿.nav-tabs {
+﻿.nav {
+    > li {
+        > a {
+            border: none !important;
+            font-size: 15px;
+            font-weight: bold;
+            color: #555;
+            @include border-radius(0);  
+            &.nav-link[aria-current="page"]{
+                text-decoration: underline 4px;
+                text-underline-offset: 0.5rem;
+            }
+        }
+    }
+}
+
+.nav-tabs {
     border-bottom: 2px solid #eee;
 
     > li {
@@ -8,10 +24,9 @@
 
         > a {
             border: none !important;
-            color: #999 !important;
+            color: #555 !important;
             @include border-radius(0);
 
-            &:hover,
             &:active,
             &:focus {
                 background-color: transparent !important;

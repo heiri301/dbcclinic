@@ -1,0 +1,35 @@
+.inner-sidebar {
+    @include transition(all 0.2s);
+    font-family: $sidebar-font-family;
+    background: #e2e2e2;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.50);
+    border-radius: 10px;
+    .list {
+        list-style: none;
+        padding-left: 0;       
+        a {
+            text-decoration: none !important;
+            span {
+                color: #333;
+                font-weight: bold;
+                font-size: 14px;
+                overflow: hidden;
+                
+            }
+            width: 100%;
+            padding: 10px 12px;  
+            &:hover,
+            &:active,
+            &:focus {
+                text-decoration: none !important;
+            }    
+            &.danger {
+                background-color: #c40707;
+                border-radius: 10px;
+                span{
+                    color: eee;
+                } 
+            }    
+    }
+    }
+}

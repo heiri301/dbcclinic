@@ -1,0 +1,13 @@
+set up personal health profile
+Background of the Office(Clinic) and their responsibilities
+IMPORTING OF PERSONAL HEALTH PROFILE
+
+- Patient should have school year
+- CSV / Excel Importation of Records to EHR *
+    - data should be patterned on Google Forms or Excel as an attachment
+    - Verify data entries of old records
+    - Medical History should be checked every year (when student and employee is active)
+- Medical Consultation should be recorded 
+
+Suggested/Non-functional/Optional Features:
+- barcode scan for Patient Logging (Suggestion)

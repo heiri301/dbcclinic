@@ -1,0 +1,25 @@
+Update X May 2024
+= Major Changes =
+    - Moved Session variables and management to JS localStorage from PHP Session localStorage
+        - these will be subject to change
+    - Updated Login pages and overall mechanism
+    - ditched Jquery in priority of pure JS functions (eg. eventListeners, Fetch API, etc)
+    - Mechanism for PHP initialization change for better abstraction and security purposes as well. It will be called through 'qry.php' files rather than on every webpage itself.
+= Styling / Backend=
+    - Modified CSS files
+    - Adjusted navbar length from BSB designs
+    - Squished sidebar to 250px, to improve readability of pages and allow more content on the main body to be shown
+    - Adjusted styles to fit more with base Bootstrap philosophy.
+    - Updated animate.css
+= JS = 
+    - removed unused files from BSB
+= PHP / Backend =
+    - Other various changes and minor fixes.
+
+=== OLD UPDATE CHANGELOGS ===
+May Update A - Changes (2023)
+- Added Templates
+- changed CSS for form layout
+- Removed bloat code
+- Remvoed unused imports / plugins
+- Included Ajax files for future integration.

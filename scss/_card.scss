@@ -1,10 +1,11 @@
 ﻿.card {
+    border-radius: 10px;
     background: #fff;
     min-height: 50px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.20);
     position: relative;
-    margin-bottom: 30px;
-    @include border-radius(2px);
+    margin-bottom: 20px; //30px
+    @include border-radius(8px) ;
 
     .card-inside-title {
         margin-top: 25px;
@@ -77,7 +78,7 @@
 
             .dropdown-menu {
                 li {
-                    display: block !important;
+                    //display: block !important;
                 }
             }
 
@@ -137,4 +138,20 @@
             }
         }
     }
+
+    .body-sm {
+        font-size: 14px;
+        color: #555;
+        padding: 5px;
+
+        @for $i from 1 through 12 {
+            .col-xs-#{$i},
+            .col-sm-#{$i},
+            .col-md-#{$i},
+            .col-lg-#{$i} {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
 }

@@ -16,8 +16,9 @@
 /* Demo ======================================== */
 @import '_demo.scss';
 
-/* Materialize Css | Taken from www.materializecss.com */
+/* Materialize Css | Taken from www.materializecss.com 
 @import '../css/materialize.css';
+*/
 
 /* Media ======================================= */
 @import '_media.scss';
@@ -58,8 +59,8 @@
 /* Switch ====================================== */
 @import '_switch.scss';
 
-/* DateTime Picker ============================= */
-@import '_datetimepicker.scss';
+/* DateTime Picker ============================= 
+@import '_datetimepicker.scss';*/
 
 /* Bootstrap Select ============================ */
 @import '_bootstrapselect.scss';
@@ -175,8 +176,14 @@
 /* Light Gallery ================================ */
 @import '_lightgallery.scss';
 
+/* Inner Sidebar ================================ */
+@import '_innersidebar.scss';
+
 /* For Internet Explorer 10 ===================== */
 @import 'browser-support/_ie10.scss';
 
 /* For Internet Explorer 11 ===================== */
 @import 'browser-support/_ie11.scss';
+
+/* Navbar ====================================== */
+@import '_dropdowns.scss';

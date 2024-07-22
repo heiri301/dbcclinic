@@ -1,6 +1,6 @@
 ﻿[type="checkbox"] {
     + label {
-        padding-left: 26px;
+        padding-left: 5px;
         height: 25px;
         line-height: 21px;
         font-size: 13px;
@@ -64,7 +64,7 @@
 [type="radio"] {
     &:not(:checked) {
         + label {
-            padding-left: 26px;
+            padding-left: 5px;
             height: 25px;
             line-height: 25px;
             font-size: 13px;
@@ -74,7 +74,7 @@
 
     &:checked {
         + label {
-            padding-left: 26px;
+            padding-left: 5px;
             height: 25px;
             line-height: 25px;
             font-size: 13px;

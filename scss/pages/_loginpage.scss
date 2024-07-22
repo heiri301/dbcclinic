@@ -1,5 +1,5 @@
 ﻿.login-page {
-    background-color: #00BCD4;
+    background-color: #94bcdd;
     padding-left: 0;
     max-width: 360px;
     margin: 5% auto;
@@ -24,7 +24,7 @@
                 display: block;
                 width: 100%;
                 text-align: center;
-                color: #fff;
+                color: hsl(0, 0%, 100%);
             }
 
             small {
@@ -34,7 +34,6 @@
                 color: #fff;
                 margin-top: -5px;
             }
-
             margin-bottom: 20px;
         }
     }

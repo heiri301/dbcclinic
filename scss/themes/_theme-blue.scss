@@ -1,0 +1,80 @@
+﻿@import '_theme-color-variables';
+
+.theme-blue {
+
+    .sidebar {
+        .sidebar-brand {
+            background-color: $theme-blue;
+            span {
+                color: $theme-blue-sidebar-text;
+            }
+        }
+    }
+
+    .navbar-brand {
+        color: $theme-blue-navbar-brand;
+
+        &:hover {
+            color: $theme-blue-navbar-brand_hover;
+        }
+
+        &:active {
+            color: $theme-blue-navbar-brand_active;
+        }
+
+        &:focus {
+            color: $theme-blue-navbar-brand_focus;
+        }
+    }
+
+    .nav {
+        > li {
+            color: $theme-blue-text;
+            > a {
+                &:focus {
+                    color: $theme-blue-text;
+                }
+                &:active, 
+                &:hover {
+                    color: $theme-blue;
+                }
+                &.nav-link[aria-current="page"]{
+                    text-decoration-color: $theme-blue;
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        .menu {
+            .list {
+                li.active {
+                    background-color: $theme-blue-menu-list-active;
+
+                    > :first-child {
+                        i, span {
+                            color: $theme-blue;
+                        }
+                    }
+                }
+
+                .toggled {
+                    background-color: $theme-blue-menu-list-toggled;
+                }
+
+                .ml-menu {
+                    background-color: $theme-blue-menu-list-submenu;
+                }
+            }
+        }
+
+        .legal {
+
+            .copyright {
+                a {
+                    color: $theme-blue !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+- DBCCLinic Changelog v0.1.0
+= Notable Changes = 
+	- Added Patient Management System
+	- Added Dashboard
+		- Health Records Management
+	- Added Patient Logging System
+	- Added Login and Logout, Session Management Functions 
+
+= Minor Changes = 
+	- Added Patient Logs to Health Records
+
+= Bugfixes = 
+	- All bugfixes are minor and are not included in the changelog
+
+= Notable bugs =
+	- File importer only works on Firefox as Chrome has problems with the filesystem API included / built-in in JavaScript
+	- Charts only contain placeholder / temporary data.
